@@ -5,6 +5,10 @@ from fastapi.staticfiles import StaticFiles
 from database import get_films
 from fastapi.templating import Jinja2Templates
 from parse import main
+import os
+
+# Создаем папку
+os.mkdir("img")
 
 app = FastAPI()
 # Монтируем статические файлы для директорий "table" и "img"
